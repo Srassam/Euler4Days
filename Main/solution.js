@@ -29,6 +29,17 @@ for (var i = 0; i < arr2.length; i++) {
 
 }
 //7)The updated inventory, arr1, is then sorted by product name 
+arr1.sort(function (a, b) {
+    if (a[1] > b[1]) {
+        return 1;
+    }
+    if (a[1] < b[1]) {
+        return -1;
+    } else {
+        return 0;
+    }
+});
+return arr1;
 
 
 // Example inventory lists
